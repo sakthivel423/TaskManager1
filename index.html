@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Task Scheduler</h1>
+      <div>
+        <label for="taskName">Task Name:</label>
+        <input type="text" id="taskName">
+      </div>
+      <div>
+        <label for="taskDescription">Task Description:</label>
+        <input type="text" id="taskDescription">
+      </div>
+      <button id="startTimerBtn">Start Timer</button>
+      <button id="stopTimerBtn">Stop Timer</button>
+      <div id="timerDisplay">00:00:00</div>
+      <label for="filterDropdown">Filter by Task Name:</label>
+      <select id="filterDropdown" disabled>
+        <option value="">All Tasks</option>
+      </select>
+      <table id="taskTable">
+        <thead>
+          <tr>
+            <th>Task Name</th>
+            <th>Task Description</th>
+            <th>Duration</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="taskTableBody">
+          
+        </tbody>
+      </table>
+      
+    </div>
+    <script src="task.js"></script>
+  </body>
+  </html>
+  
